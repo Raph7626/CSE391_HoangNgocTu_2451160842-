@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt hàng — ShopTLU</title>
+</head>
+<body>
+    <h1>Checkout — ShopTLU</h1>
+    <section>
+        <h2>Tìm kiếm sản phẩm</h2>
+        <label for="tim">Tìm sản phẩm:</label>
+        <input
+            type="search" id="tim" name="tim" list="products" placeholder="Nhập tên sản phẩm...">
+        <datalist id="products">
+            <option value="iPhone 16 Pro">
+            <option value="HP Envy 13">
+            <option value="Xiaomi 15">
+            <option value="Lenovo Legion Y700">
+            <option value="MacBook Air M3">
+        </datalist>
+    </section>
+    <hr>
+    <section>
+        <h2>Giỏ hàng</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Sản phẩm</th>
+                    <th>Đơn giá</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>iPhone 16 Pro</td>
+                    <td>25.090.000đ</td>
+                    <td>1</td>
+                    <td>25.090.000đ</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>HP Envy 13</td>
+                    <td>15.000.000đ</td>
+                    <td>2</td>
+                    <td>30.000.000đ</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Lenovo Legion Y700</td>
+                    <td>13.500.000đ</td>
+                    <td>1</td>
+                    <td>13.500.000đ</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4"><strong>Tổng cộng</strong></td>
+                    <td><strong>68.500.000đ</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+        <p><output id="tong" name="tong" for="tim">68.500.000đ</output></p>
+        <p>Điểm tích lũy của bạn:
+            <meter id="diem" min="0" max="1000"
+            low="200" high="700" value="650">650/1000 điểm</meter>
+            <span>650 / 1000 điểm</span>
+        </p>
+    </section>
+    <hr>
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Phương thức thanh toán</legend>
+            <input type="radio" id="cod" name="checkout" value="cod">
+            <label for="cod">COD</label><br>
+            <input type="radio" id="ebank" name="checkout" value="ebank">
+            <label for="ebank">Chuyển khoản ngân hàng</label><br>
+            <input type="radio" id="ewallet" name="checkout" value="ewallet">
+            <label for="ewallet">Ví điện tử</label><br>
+            <label for="discount">Mã giảm giá</label>
+            <input type="text" id="ma-giam-gia" name="ma-giam-gia" pattern="SALE[0-9]{4}" placeholder="VD: SALE2026"><br>
+            <label for="ghi-chu">Ghi chú đơn hàng (không bắt buộc)</label><br>
+            <textarea id="ghi-chu" name="ghi-chu" rows="3" placeholder="Ghi chús"></textarea>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Thông tin giao hàng</legend>
+            <label for="hoten">Họ tên người nhận</label>
+            <input type="text" id="hoten" name="hoten" required minlength="2" maxlength="50" placeholder="Hoàng Ngọc Tú"><br>
+            <label for="dienthoai">Số điện thoại</label>
+            <input type="tel" id="dienthoai" name="dienthoai"  pattern="[0-9]{10}" required placeholder="0878866206"><br>
+            <label for="diachi">Địa chỉ giao hàng</label><br>
+            <textarea id="diachi" name="diachi" rows="3" required placeholder="Số nhà, tên đường,..."></textarea><br>
+            <label for="ngay-giao">Ngày giao hàng mong muốn</label>
+            <input type="date" id="dateGiao" name="dateGiao" min="2026-04-30"><br>
+            <label for="timeGiao">Khung giờ giao hàng</label>
+            <select id="timeGiao" name="timeGiao">
+                <option value="">Chọn giờ</option>
+                <option value="sang">Sáng 8h-12h</option>
+                <option value="chieu">Chiều 14h-18h</option>
+                <option value="toi">Tối 18h-21h</option>
+            </select><br>
+            <label for="ngay">Thời gian giao hàng (số ngày): <span id="ngay-label">4</span> ngày</label><br>
+            <input type="range" id="ngay" name="ngay" min="1" max="7" step="1" value="4">
+        </fieldset>
+        <br>
+        <button type="submit" aria-label="Xác nhận đặt hàng">Xác nhận đặt hàng</button>
+
+        <button type="reset">Nhập lại</button>
+    </form>
+    <footer>
+        <p>Shop TLU - 2026</p>
+    </footer>
+</body>
+</html>
