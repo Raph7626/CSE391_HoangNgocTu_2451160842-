@@ -138,7 +138,15 @@ Câu C1:
 </html>
 
 Câu C2:
-Quan điểm "chỉ cần dùng <div> rồi thêm class là đủ" nghe có vẻ ổn, nhưng nó rất nghiệp đư. Website không chỉ để con người nhìn bằng mắt, mà còn để trình duyệt và các công cụ tìm kiếm thứ cần tìm. Ta có thể thấy 2 lý do kỹ thuật chính. Đầu tiên là SEO. Google không thể hiểu một khối code nếu bạn không định danh nó. Một tiêu đề nằm trong <h1> luôn có sự chú ý lớn hơn div class="title". Nếu lạm dụng <div>, bạn đang tự tay dìm website của mình. Thứ hai là khả năng truy cập cho mọi người. Những người khiếm thị dùng phần mềm đọc màn hình sẽ không theer làm gì nếu gặp một trang web toàn thẻ div. Các thẻ như <nav>, <main>, hay <button> là những thứ giúp họ định vị trang web. Ví dụ Khi dùng cặp thẻ <figure> và <figcaption> cho ảnh iPhone 16, điều này đang tạo ra một mối liên kết chặt chẽ. Trình duyệt biết rõ đâu là ảnh, đâu là chú thích. Nếu dùng <div>, mối liên kết này biến mất, ảnh sẽ khó hiện lên khi khách hàng tìm kiếm trên Google Images. Trường hợp dùng <div> vẫn phù hợp. Tất nhiên, <div> vẫn có thể dùng. Nhưng nó hoàn hảo cho mục đích thuần trang trí. Khi ta cần một cái khung để căn giữa nội dung wrapper, tạo hiệu ứng đổ bóng hoặc làm nền màu mè mà không mang ý nghĩa thông tin, hãy dùng <div>. Tóm lại, dùng Semantic HTML là biểu hiện của một lập trình viên có tư duy hệ thống và tôn trọng người dùng. 
+Quan điểm "chỉ cần dùng <div> rồi thêm class là đủ" nghe có vẻ ổn, nhưng nó rất nghiệp đư. Website không chỉ để con người nhìn bằng mắt, mà còn để trình duyệt 
+và các công cụ tìm kiếm thứ cần tìm. Ta có thể thấy 2 lý do kỹ thuật chính. Đầu tiên là SEO. Google không thể hiểu một khối code nếu bạn không định danh nó. 
+Một tiêu đề nằm trong <h1> luôn có sự chú ý lớn hơn div class="title". Nếu lạm dụng <div>, bạn đang tự tay dìm website của mình. Thứ hai là khả năng truy cập cho
+mọi người. Những người khiếm thị dùng phần mềm đọc màn hình sẽ không theer làm gì nếu gặp một trang web toàn thẻ div. Các thẻ như <nav>, <main>, hay <button> là 
+những thứ giúp họ định vị trang web. Ví dụ Khi dùng cặp thẻ <figure> và <figcaption> cho ảnh iPhone 16, điều này đang tạo ra một mối liên kết chặt chẽ. Trình 
+duyệt biết rõ đâu là ảnh, đâu là chú thích. Nếu dùng <div>, mối liên kết này biến mất, ảnh sẽ khó hiện lên khi khách hàng tìm kiếm trên Google Images. Trường hợp 
+dùng <div> vẫn phù hợp. Tất nhiên, <div> vẫn có thể dùng. Nhưng nó hoàn hảo cho mục đích thuần trang trí. Khi ta cần một cái khung để căn giữa nội dung wrapper, 
+tạo hiệu ứng đổ bóng hoặc làm nền màu mè mà không mang ý nghĩa thông tin, hãy dùng <div>. Tóm lại, dùng Semantic HTML là biểu hiện của một lập trình viên có tư 
+duy hệ thống và tôn trọng người dùng. 
 
 
  
