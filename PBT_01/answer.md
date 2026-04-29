@@ -67,6 +67,7 @@ C)
 Câu C1:
 <!DOCTYPE html>
 <html lang="vi">
+<html>
     <head>
     <meta charset = "utf-8"> <!--Cài đặt chữ tiếng việt-->
     <meta name = "viewreport" content = "width = device-width,initial scale = 1.0"> <!--Load lên điện thoại thì fit màn hình-->
@@ -134,7 +135,7 @@ Câu C1:
         </ul>
     </footer>
 </body>
-<html>
+</html>
 
 Câu C2:
 Quan điểm "chỉ cần dùng <div> rồi thêm class là đủ" nghe có vẻ ổn, nhưng nó rất nghiệp đư. Website không chỉ để con người nhìn bằng mắt, mà còn để trình duyệt và các công cụ tìm kiếm thứ cần tìm.
