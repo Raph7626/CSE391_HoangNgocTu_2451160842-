@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewreport" content="width=device-height. initial-scale=1.0">
+    <title>Đăng ký TLU</title>
+</head>
+<body>
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Thông tin tài khoản</legend>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@email.com"><br>
+
+            <label for="pass">Mật khẩu</label>
+            <input type="password" id="pass" name="pass" required placeholder="********"
+                    minlength="8", pattern="(?.=*/d)(?.=*[a-z])(?.=*[A-Z]).{8,}"
+                    title="'Ít nhất phải từ 8 kí tự trở lên"><br>
+
+            <label for="phone">Số điện thoại</label>
+            <input type="tel" id="phone" name="phone"
+                pattern="[0-9]{10}" placeholder="0878866206"><br>
+                
+            <label for="dob">Ngày sinh</label>
+            <input type="date" id="dob" name="dob" max="2026-05-01"><br>
+        </fieldset>
+
+        <label>
+                <input type="checkbox" name="agree" required>
+                Tôi đồng ý điều khoản
+        </label>
+        <button type="submit">Đăng ký</button>
+    </form>
+
+</body>
+
+</html>

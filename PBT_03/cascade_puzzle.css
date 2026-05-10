@@ -1,0 +1,20 @@
+ body { font-size: 16px; color: #333; }
+        .container { font-size: 14px; }
+        .card { color: blue; }
+        .card .title { font-size: 20px; }
+        .card p { color: inherit; }
+        #featured .title { color: red; }
+        .highlight { color: green !important; }
+ 
+.card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px 0;
+    border-radius: 8px;
+        }
+ 
+.check {
+    font-size: 12px;
+    color: #999;
+    font-style: italic;
+    }

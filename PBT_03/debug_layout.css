@@ -1,0 +1,12 @@
+/* Cách 1: border-box */
+.borderbox .sidebar,
+.borderbox .content {
+  box-sizing: border-box;
+}
+
+.borderbox .sidebar { width: 300px; padding: 20px; }
+.borderbox .content { width: 660px; padding: 30px; }
+
+/* Cách 2: không dùng border-box */
+.borderbox .no-box.sidebar { width: 258px; padding: 20px; }
+.borderbox .no-box.content { width: 598px; padding: 30px; }

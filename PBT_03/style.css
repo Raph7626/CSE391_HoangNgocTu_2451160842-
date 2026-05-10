@@ -1,0 +1,57 @@
+* { box-sizing: border-box; }
+
+.container {
+    max-width: 1100px;
+    align-items: center;
+    margin: auto;
+}
+
+body{
+    font-family: sans-serif;
+    background-color:whitesmoke; 
+    color:solid black; 
+    line-height: normal;}
+
+header{
+    background-image: linear-gradient(to right, cyan, violet);
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: right;}
+
+nav ul{
+    text-decoration: none;
+    display: flex;
+    text-align: right;
+}
+
+nav ul li{
+    list-style-type: none;
+    margin-right: 60px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+table{
+    border-collapse: collapse;
+    
+}
+
+thead{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+footer{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    width: fit-content;
+}
+
