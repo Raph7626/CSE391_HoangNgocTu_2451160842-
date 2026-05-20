@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop TLU</title>
+    <link rel="stylesheet" href="positioning.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Hoàng Ngọc Tú</div>
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#">Sản phẩm</a>
+            <a href="https://github.com/Raph7626?tab=repositories">Git</a>
+        </nav>
+    </header>
+
+    <div class="main-layout">
+        <aside class="sidebar">
+            <h3>Danh mục</h3>
+            <ul>
+                <li>Điện thoại</li>
+                <li>Laptop</li>
+                <li>Tablet</li>
+                <li>Phụ kiện</li>
+                <li>Đồng hồ</li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <h1>Positioning Demo</h1>
+            
+            <div class="product-card">
+                <div class="badge">HOT</div>
+                <h3>iPhone 16 Pro</h3>
+                <p>28.990.000 ₫</p>
+                <button>Thêm vào giỏ</button>
+            </div>
+
+            <div class="product-card">
+                <div class="badge">HOT</div>
+                <h3>MacBook Air M3</h3>
+                <p>32.990.000 ₫</p>
+                <button>Thêm vào giỏ</button>
+            </div>
+
+            <p style="margin: 50px 0; line-height: 2;">
+                Cuộn xuống để xem header fixed và sidebar sticky...<br>
+                Cuộn tiếp nữa...
+            </p>
+            <p style="height: 800px; background: #f0f0f0; padding: 20px;">
+                Nội dung dài để test scroll...
+            </p>
+            <footer>TLU-2026</footer>
+        </main>
+    </div>
+
+    <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        ↑
+    </button>
+</body>
+
+</html>
