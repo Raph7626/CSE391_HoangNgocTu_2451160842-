@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+}
+
+.header {
+    background: #1a1a1a;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav {
+    display: none;          
+}
+
+.hamburger {
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Product Section */
+.main-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-section h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.sidebar, .ads {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .product-section h1 { font-size: 2.2rem; }
+    
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sidebar {
+        display: block;
+        background: #f0f0f0;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .main-container {
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        gap: 25px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-container {
+        grid-template-columns: 250px 1fr 220px;
+    }
+
+    .products {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .nav {
+        display: flex;
+        gap: 25px;
+    }
+
+    .nav a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .ads {
+        display: block;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}

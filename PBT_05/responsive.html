@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLU Shop</title>
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Hoàng Ngọc Tú</div>
+        
+        <nav class="nav">
+            <a href="#">Trang chủ</a>
+            <a href="#">Sản phẩm</a>
+            <a href="#">Liên hệ</a>
+        </nav>
+
+        <button class="hamburger">☰</button>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <h3>Bộ lọc</h3>
+            <label><input type="checkbox" checked> Apple</label><br><br>
+            <label><input type="checkbox"> Samsung</label><br><br>
+            <label><input type="checkbox"> Xiaomi</label>
+        </aside>
+
+        <main class="product-section">
+            <h1>Sản phẩm</h1>
+            <div class="products">
+                <div class="card">1</div>
+                <div class="card">2</div>
+                <div class="card">3</div>
+                <div class="card">4</div>
+                <div class="card">5</div>
+            </div>
+        </main>
+
+        <aside class="ads">
+            <img src="https://picsum.photos/280/600?random=99" alt="ads">
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <p>2026-TLU</p>
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', () => {
+            alert('Menu mobile (Bạn có thể cải tiến thêm)');
+        });
+    </script>
+</body>
+</html>
