@@ -1,0 +1,129 @@
+.header {
+    background-color: $bg-light;
+    padding: $spacing-md $spacing-md;
+    border-bottom: 1px solid $border-color;
+
+    @include flex-between;
+
+    h1 {
+        font-size: $font-size-lg;
+        font-weight: bold;
+        color: $text-dark;
+    }
+
+    .lang-buttons {
+        display: flex;
+        gap: $spacing-sm - 3px;
+
+        button {
+            @include btn-base;
+
+            &.active {
+                background-color: $primary-color;
+                color: $bg-white;
+                border-color: $primary-color;
+            }
+        }
+    }
+}
+
+.toolbar {
+    background-color: $bg-white;
+    padding: $spacing-sm + 2px $spacing-md;
+    border-bottom: 1px solid #dddddd;
+
+    @include flex-between;
+
+    .btn-them {
+        @include btn-base;
+    }
+
+    .search-input {
+        padding: 6px $spacing-md - 4px;
+        border: 1px solid $border-color;
+        border-radius: $border-radius;
+        font-size: $font-size-base;
+        width: 220px;
+        color: $secondary-color;
+    }
+}
+
+.main-content {
+    background-color: $bg-white;
+    padding: $spacing-md;
+    border: 1px solid #dddddd;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $spacing-md - 1px;
+
+    @include respond-to(tablet) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.card {
+    border: 1px solid $border-color;
+    border-radius: $border-radius-md;
+    padding: $spacing-md - 4px $spacing-md - 1px;
+    background-color: $bg-white;
+
+    @include card-shadow;
+
+    &:hover {
+        border-color: $primary-color;
+        @include card-shadow;
+    }
+
+    &.featured {
+        border-color: $primary-color;
+        border-width: 2px;
+    }
+
+    h3 {
+        font-size: $font-size-md;
+        font-weight: bold;
+        margin-bottom: $spacing-sm - 3px;
+        color: $text-dark;
+    }
+
+    .serial {
+        font-size: $font-size-sm;
+        color: $text-muted;
+        margin-bottom: $spacing-sm - 5px;
+    }
+
+    .loai {
+        font-size: $font-size-base;
+        color: $text-dark;
+        margin-bottom: $spacing-sm - 5px;
+    }
+
+    .trang-thai {
+        font-size: $font-size-base;
+        font-weight: bold;
+        margin-bottom: $spacing-sm;
+        color: $text-dark;
+    }
+
+    .card-actions {
+        display: flex;
+        gap: $spacing-sm - 3px;
+
+        .btn-sua,
+        .btn-xoa {
+            padding: 3px $spacing-sm + 2px;
+            border: 1px solid $secondary-color;
+            background-color: $bg-white;
+            cursor: pointer;
+            font-size: $font-size-sm;
+            border-radius: $border-radius;
+
+            &:hover {
+                background-color: $bg-light;
+            }
+        }
+    }
+}
