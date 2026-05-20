@@ -3,33 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid E-Commerce</title>
+    <title>TechStore - Hoàng Ngọc Tú</title>
     <link rel="stylesheet" href="grid.css">
 </head>
 <body>
-    
-    <div class="container">
-      
+    <header class="header">
+        <h1>TechStore</h1>
+        <nav>
+            <div class="menu">
+            <a href="#">Trang chủ</a>
+            <a href="#">Sản phẩm</a>
+            <a href="https://github.com/Raph7626?tab=repositories">About</a>
+        </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Sale hè 2026 - Giảm đến 50%</h2>
+            <button class="btn-hero">Mua ngay</button>
+        </div>
+    </section>
+
+    <div class="main-grid">
         <aside class="sidebar">
-            <h3>Bộ lọc sản phẩm</h3>
+            <h3>Bộ lọc</h3>
             <label><input type="checkbox" checked> Apple</label><br>
             <label><input type="checkbox"> Samsung</label><br>
         </aside>
 
         <main class="main-content">
-            <h2>Sản phẩm</h2>
+            <h2>Sản phẩm nổi bật</h2>
+            
+            <div class="featured-card">
+                <div class="featured-info">
+                    <h3>iPhone 16 Pro Max</h3>
+                    <p>Giá chỉ từ 28.990.000 ₫</p>
+                </div>
+            </div>
+
             <div class="products-grid">
                 <div class="card">Card 1</div>
                 <div class="card">Card 2</div>
+                <div class="card">Card 3</div>
             </div>
         </main>
 
-        <!-- ADS -->
         <aside class="ads">
-            <img src="https://picsum.photos/250/600" alt="ads">
-            <p>Quảng cáo</p>
+            <p>Quảng cáo đặc biệt</p>
         </aside>
     </div>
 
+    <footer class="footer">
+        <p>2026-TLU</p>
+    </footer>
 </body>
 </html>

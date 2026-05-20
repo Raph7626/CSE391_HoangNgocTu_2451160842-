@@ -9,7 +9,6 @@ body {
     background: #f9f9f9;
 }
 
-/* ==================== NAVBAR ==================== */
 .navbar {
     display: flex;
     align-items: center;
@@ -65,7 +64,6 @@ body {
     color: white;
 }
 
-/* ==================== PRODUCT CARDS ==================== */
 .container {
     max-width: 1200px;
     margin: 40px auto;
