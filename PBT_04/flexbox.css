@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+}
+
+/* ==================== NAVBAR ==================== */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1a1a1a;
+    color: white;
+    padding: 0 30px;
+    height: 70px;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 35px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.menu a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+.auth {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-login, .btn-register {
+    padding: 8px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-login {
+    color: white;
+    border: 2px solid #3498db;
+}
+
+.btn-register {
+    background: #3498db;
+    color: white;
+}
+
+/* ==================== PRODUCT CARDS ==================== */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.container h2 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 0 0 calc(25% - 20px);
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 12px 15px 0;
+    font-size: 1.1rem;
+}
+
+.card .price {
+    padding: 5px 15px;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.card .btn {
+    margin-top: auto;
+    padding: 12px;
+    background: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .card { flex: 0 0 calc(33.33% - 20px); }
+}
+
+@media (max-width: 600px) {
+    .card { flex: 0 0 calc(50% - 20px); }
+    .menu { gap: 20px; }
+}
