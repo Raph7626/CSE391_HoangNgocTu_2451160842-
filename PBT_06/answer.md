@@ -40,3 +40,4 @@ Câu A2:
 +container-fluid có chiều rộng 100% toàn màn hình, chỉ có padding nhỏ 2 bên. Làm full-width section (hero, banner)
 
 +container-md thì dưới md (< 768px) chiếm 100% width còn từ md (≥ 768px) trở lên thì có chiều rộng cố định. Dùng khi muốn full width trên mobile, nhưng giới hạn chiều rộng trên tablet/desktop.
+
