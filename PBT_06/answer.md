@@ -41,3 +41,31 @@ Câu A2:
 
 +container-md thì dưới md (< 768px) chiếm 100% width còn từ md (≥ 768px) trở lên thì có chiều rộng cố định. Dùng khi muốn full width trên mobile, nhưng giới hạn chiều rộng trên tablet/desktop.
 
+Câu C1:
+Component đã chọn: Product Card (từ bài trước)
+So sánh:
+
+    HTML file size:
+    CSS thuần: HTML ngắn gọn, chỉ khoảng 8-10 dòng. Toàn bộ style nằm ở file .css riêng.
+    Tailwind: HTML dài hơn nhiều (20-25 dòng) vì phải viết rất nhiều class utility (bg-white rounded-xl shadow-md hover:scale-105 transition...).
+
+    Dễ đọc và sửa:
+    CSS thuần: Dễ đọc hơn, code rõ ràng theo tên class (.product-card { ... }). Khi sửa style chỉ cần sửa 1 chỗ trong file CSS.
+    Tailwind: Ban đầu hơi khó đọc vì HTML đầy class. Tuy nhiên khi quen thì sửa nhanh ngay trên HTML, không phải chuyển qua file CSS.
+
+    Tái sử dụng:
+    CSS thuần: Phải viết class mới hoặc dùng @extend. Tái sử dụng tốt nhưng phải quản lý nhiều file CSS.
+    Tailwind: Tái sử dụng cực tốt nhờ @apply. Có thể tạo component trong CSS:
+
+    .card-product {
+        @apply bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300;
+    }
+
+Câu C2:
+1.Tailwind chỉ sinh ra những class utility thực sự được sử dụng trong dự án. Bootstrap thì sinh ra gần như toàn bộ CSS (có cả những class không dùng). Do đó file CSS của Tailwind thường chỉ khoảng 20-60KB, trong khi Bootstrap có thể lên đến 150-200KB.
+
+2.PurgeCSS sẽ quét toàn bộ file HTML để xem class nào đang được dùng, sau đó chỉ giữ lại những class đó và loại bỏ hết những class không sử dụng.
+
+3.Ko nên dùng trong :
++Các dự án nhỏ, landing page 1-2 trang, thời gian gấp → Dùng CSS thuần hoặc Bootstrap nhanh hơn.
++Team designer + developer làm việc chung, cần thiết kế pixel-perfect theo đúng design system phức tạp.
