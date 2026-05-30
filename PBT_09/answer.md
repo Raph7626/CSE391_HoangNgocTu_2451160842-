@@ -64,3 +64,12 @@ code vi du:
 
     document.querySelector("#result").innerHTML = userInput;  
     // → Trang web sẽ thực thi alert('Hacked!') → LỖ HỔNG XSS
+
+Câu A3:
+    1.  Khi không có stopPropagation(): 
+        BUTTON
+        INNER
+        OUTER
+
+    2. Nếu uncomment dòng e.stopPropagation():
+        BUTTON
