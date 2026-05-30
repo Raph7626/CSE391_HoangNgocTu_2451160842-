@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛍️ Product Catalog</h1>
+            <div class="controls">
+                <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+                
+                <div class="category-filters" id="categoryFilters"></div>
+                
+                <select id="sortSelect">
+                    <option value="default">Sắp xếp mặc định</option>
+                    <option value="price-asc">Giá tăng dần</option>
+                    <option value="price-desc">Giá giảm dần</option>
+                    <option value="name-asc">Tên A-Z</option>
+                    <option value="rating-desc">Đánh giá cao nhất</option>
+                </select>
+                
+                <button id="darkModeToggle">🌙</button>
+            </div>
+        </header>
+
+        <div class="cart-icon" id="cartIcon">
+            🛒 <span id="cartCount" class="badge">0</span>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+    </div>
+
+    <!-- Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

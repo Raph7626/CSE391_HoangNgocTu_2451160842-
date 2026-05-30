@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Navigation App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>⌨️ Keyboard Navigation Demo</h1>
+        
+        <div class="gallery">
+            <h2>Gallery Ảnh (Sử dụng phím mũi tên)</h2>
+            <div id="mainImage" class="main-image"></div>
+            
+            <div class="thumbnails" id="thumbnails"></div>
+            
+            <div class="info">
+                <p>← → : Chuyển ảnh | 1-9 : Nhảy đến ảnh | Space : Play/Pause Slideshow | Esc : Đóng</p>
+            </div>
+        </div>
+
+        <button id="openPalette" class="palette-btn">Nhấn Ctrl + K để mở Command Palette</button>
+    </div>
+
+    <!-- Command Palette -->
+    <div id="commandPalette" class="palette">
+        <input type="text" id="paletteSearch" placeholder="Tìm lệnh... (ví dụ: dark, next, help)" autofocus>
+        <ul id="commandList"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
