@@ -106,20 +106,36 @@ Câu A4:
     name: "iPhone 16",
     price: 25990000,
     specs: { ram: 8, storage: 256, color: "Titan" }
-};
+    };
 
-// Destructuring
-const { name, price, specs: { ram, color } } = product;
-console.log(name, price, ram, color);  // ???
-console.log(specs);                     // ???
+    // Destructuring
+    const { name, price, specs: { ram, color } } = product;
+    console.log(name, price, ram, color);  // iPhone 16 25990000 8 Titan
+    console.log(specs);                     //ReferenceError: specs is not defined
 
-// Spread
-const updated = { ...product, price: 23990000, sale: true };
-console.log(updated.price);            // ???
-console.log(updated.sale);             // ???
-console.log(product.price);            // ???  (gốc có đổi?)
+    // Spread
+    const updated = { ...product, price: 23990000, sale: true };
+    console.log(updated.price);            // 23990000
+    console.log(updated.sale);             // true
+    console.log(product.price);            // 25990000  (gốc ko bij thay ddooir)
 
-// Spread gotcha
-const copy = { ...product };
-copy.specs.ram = 16;
-console.log(product.specs.ram);        // ??? (16 hay 8? Tại sao?)
+    // Spread gotcha
+    const copy = { ...product };
+    copy.specs.ram = 16;
+    console.log(product.specs.ram);        // 16 (16 có bị thay đổi do specs là 1 object, copy.specs và product.specs cùng chỉ vaò 1 vùng nhớ)
+
+Câu C1
+    function processOrders(orders) {
+        return orders
+            .filter(order => order.status === "completed" && order.total > 100000)
+            .map(order => ({
+                id: order.id,
+                customer: order.customer,
+                total: order.total,
+                discount: order.total * 0.1,
+                finalTotal: order.total * 0.9
+            }))
+            .sort((a, b) => b.finalTotal - a.finalTotal);
+    }
+
+Câu C2:
